@@ -1,0 +1,14 @@
+/*---Global style---*/
+
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin:0;
+    font-family: 'Akaya Telivigala', cursive;
+}
+fieldset{
+    border: none;
+}
