@@ -20,6 +20,7 @@ body {
 
 header{
     text-align: center;
+
 }
 
 h1{
@@ -27,6 +28,7 @@ h1{
     background-color: rgb(240, 164, 136);
     font-size: 25px;
     padding: 25px;  
+    
 }
 p{
     font-size: 20px;
@@ -94,7 +96,7 @@ select{
     width:100%;
     background-color: rgb(248, 212, 198);
     color: #472a25;
-    box-shadow:3px 1px 0 rgba(187, 64, 64, 0.3) inset;
+    box-shadow:3px 1px 0 rgba(112, 75, 75, 0.3) inset;
 }
 
 
@@ -111,13 +113,29 @@ select{
     margin: 0;
   }
 
+input:focus, select:focus, textarea:focus{
+    border:2px solid  #704b4b4d;
+    border-radius:10px;
+    outline: none;
+}
+input:hover, select:hover{
+    background-color: rgb(252, 230, 222);
+    border-radius:10px;
+    box-shadow:10px 10px 12px rgba(238, 183, 183, 0.8);
+} ;
+
+
  /*********  Newsleter  ******/
 
  input[type="checkbox"],
  input[type="radio"]{
      margin:10px;
-    
  }
+ input[type="checkbox"]:focus,
+ input[type="radio"]:focus{
+     outline: 2px solid  #ec466a4d;
+ }
+
  .select{
      font-size: 22px;
      font-style: italic;
@@ -128,27 +146,82 @@ select{
  .copy{
     text-align: center;
     font-weight: 400; 
+    font-size: 20px;
     color: #472a25;
+   
  }
-
+ 
+ .but-cont{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
  .but{
     padding: 19px 39px 18px 39px;
-    color: #fff;
-    background-color: #23b89d;
+    color: rgb(17, 17, 17);
+    background-color:  rgb(240, 164, 136);
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-    font-style: normal;
-    border-radius: 5px;
-    width: 90%;
+    border-radius: 15px;
+    width: 60%;
     border: none;
-    font-family: inherit;
-    margin:30px 20px;
-    
-    
+    font-family: inherit; 
+    cursor: pointer;
   }
-  .textarea{
-      margin-top:30px;
+
+  .but:hover{
+      opacity: 0.8;
+  }
+
+#other{
+    margin-top: 10px;
+    transition: 1s;
+    height: 89px;
+}
+#other:focus{
+    height: 150px;
+    background-color:rgb(247, 233, 229);
+  box-shadow: 5px 5px 10px rgba(235, 217, 217, 0.7);
+
+}
+  .textarea
+  {
+      margin-top:20px;
       padding:10px;
+      
+  }
+  footer{
+      margin-top:-90px;
+  }
+
+  @media (min-width:768px){
+   .wrapper-form{
+       margin:auto;
+       width:680px;
+
+   }
+   .flex-box{
+       display:flex;
+       flex-direction:row;
+       align-items: center;
+   }
+   .flex-box label{
+       margin-left:0;
+       flex-basis:25%;
+   }
+   .flex-box input,
+   .flex-box select{
+       flex-basis:75%;
+       margin:5px 0;
+   }
+   #zip{
+       max-width:35%;
+   }
+   .flex-newsletter{
+       display: flex;
+       align-items: center;
+   }
+ 
   }
 

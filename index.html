@@ -53,7 +53,7 @@
                             <input type="text" id="city" name="user_city" placeholder="Requiered">
                         </div>
 
-                        <div>
+                        <div class="flex-box">
                             <label for="state">Country</label><br>
                             <select id="state" name="user_">
                                 <option value="">Choose your country</option>
@@ -87,16 +87,16 @@
                         <legend>Newsletter</legend>
                         <label class="select">Select the newletters you woul like to recieve</label>
                         
-                        <div class="flex-box"> 
+                        <div class="flex-newsletter"> 
                             <input type="checkbox" id="html" value="html_new" name="html_user"><label for="html">HTML</label>
                         </div>
 
-                        <div class="flex-box">
+                        <div class="flex-newsletter">
                             
                             <input type="checkbox" id="css" value="css_new" name="css_user"><label for="css">CSS</label> 
                         </div>
 
-                        <div class="flex-box">
+                        <div class="flex-newsletter">
                             
                              <input type="checkbox" id="jave-script" value="java_new" name="java_user"><label for="jave-script">Java Script</label>
                         </div>
@@ -104,11 +104,11 @@
 
                         <label class="select">Newsletter format</label><br>
 
-                        <div class="flex-box">
+                        <div class="flex-newsletter">
                             <input type="radio" id="html" value="html" name="user_format"><label for="html">HTML</label><br>
                         </div>
 
-                        <div class="flex-box">
+                        <div class="flex-newsletter">
                             <input type="radio" id="plain_text" value="plain_text" name="user_format"><label
                                 for="plain_text">Plain
                                 text</label><br>
@@ -118,12 +118,15 @@
                         <textarea id="other" name="user_bio"></textarea>
                         </div>
                         <br>
+                        <div class="but-cont">
                         <button class="but" href="#" type="submit">Sign Up</button>
+                        </div>
                     </fieldset>
                 </section>
             </form>
         </div>
     </main>
+    
     <footer>
       <p class="copy">Copyright The Code Review</p>
     </footer>
