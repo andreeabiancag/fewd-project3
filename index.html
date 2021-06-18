@@ -30,32 +30,32 @@
 
                         <div class="flex-box">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="user_name" placeholder="Required">
+                            <input type="text" id="name" name="user_name" placeholder="Required" required>
                         </div>
 
                         <div class="flex-box">
                             <label for="surname">Surname</label>
-                            <input type="text" id="surname" name="user_surname" placeholder="Requiered">
+                            <input type="text" id="surname" name="user_surname" placeholder="Requiered" required>
                         </div>
 
                         <div class="flex-box">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" name="user_email" placeholder="Requiered">
+                            <input type="email" id="email" name="user_email" placeholder="Requiered" required>
                         </div>
 
                         <div class="flex-box">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="user_phone">
+                            <input type="tel" id="phone" name="user_phone" placeholder="Requiered" required>
                         </div>
 
                         <div class="flex-box">
                             <label for="city">City</label>
-                            <input type="text" id="city" name="user_city" placeholder="Requiered">
+                            <input type="text" id="city" name="user_city" placeholder="Requiered" required>
                         </div>
 
                         <div class="flex-box">
                             <label for="state">Country</label><br>
-                            <select id="state" name="user_">
+                            <select id="state" name="user_selectoption">
                                 <option value="">Choose your country</option>
                                 <option value="Romania">Romania</option>
                                 <option value="Italy">Italy</option>
@@ -69,14 +69,14 @@
                                 <option value="Greece">Greece</option>
                                 <option value="Russia">Russia</option>
                                 <option value="Ukraine">Ukraine</option>
-                                <opion value="Finland">Finland</opion>
+                                <option value="Finland">Finland</option>
                                 <option value="Norway">Norway</option>
                             </select>
                         </div><br>
 
                         <div class="flex-box">
                             <label for="zip">Zip Code</label>
-                            <input type="text" id="zip" name="user_zipcode" placeholder="0124">
+                            <input type="text" id="zip" name="user_zipcode" placeholder="0124" required>
                         </div>
 
                         </fieldset>
@@ -98,14 +98,14 @@
 
                         <div class="flex-newsletter">
                             
-                             <input type="checkbox" id="jave-script" value="java_new" name="java_user"><label for="jave-script">Java Script</label>
+                             <input type="checkbox" id="java-script" value="java_new" name="java_user"><label for="java-script">Java Script</label>
                         </div>
                         <br>
 
                         <label class="select">Newsletter format</label><br>
 
                         <div class="flex-newsletter">
-                            <input type="radio" id="html" value="html" name="user_format"><label for="html">HTML</label><br>
+                            <input type="radio" id="html2" value="html" name="user_format"><label for="html2">HTML</label><br>
                         </div>
 
                         <div class="flex-newsletter">
@@ -115,11 +115,11 @@
                         </div>
                         <div class="textarea">
                         <label for="other">Other topics you'd like to hear about</label><br>
-                        <textarea id="other" name="user_bio"></textarea>
+                        <textarea id="other" name="user_bio" placeholder="Requiered" required></textarea>
                         </div>
                         <br>
                         <div class="but-cont">
-                        <button class="but" href="#" type="submit">Sign Up</button>
+                        <button class="but" type="submit">Sign Up</button>
                         </div>
                     </fieldset>
                 </section>
