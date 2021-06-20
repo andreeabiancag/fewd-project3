@@ -97,7 +97,7 @@ select{
     background-color: rgb(248, 212, 198);
     color: #472a25;
     box-shadow:3px 1px 0 rgba(112, 75, 75, 0.3) inset;
-    transition: border 1s;
+    
 }
 
 
@@ -118,6 +118,7 @@ input:focus, select:focus, textarea:focus{
     border:2px solid  #704b4b4d;
     border-radius:10px;
     outline: none;
+    transition: border 1s;
     
 }
 input:hover, select:hover{
